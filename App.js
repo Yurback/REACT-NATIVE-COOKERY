@@ -1,13 +1,18 @@
+
+// import { LogBox } from 'react-native';
+
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import * as Font from 'expo-font';
 import AppLoading from 'expo-app-loading';
-// import { enableScreens } from 'react-native-screens';
+import { enableScreens } from 'react-native-screens';
 
 import MealsNavigator from './navigation/MealsNavigator';
 
-// enableScreens();
+enableScreens();
+
+// LogBox.ignoreLogs(['Warning: ...']); // Ignore log notification by message
 
 const fetchFonts = () => {
   return Font.loadAsync({
